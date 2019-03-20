@@ -15,5 +15,5 @@ func multiply(number1: Int,number2: Int) -> Int {
     return number1 * number2
 }
 print (multiply(number1: 2, number2: 5))
-
+print(multiply(number1: 3, number2: 90))
 //: [Previous](@previous)  |  page 5 of 6  |  [Next: App Exercise - Separating Functions](@next)
