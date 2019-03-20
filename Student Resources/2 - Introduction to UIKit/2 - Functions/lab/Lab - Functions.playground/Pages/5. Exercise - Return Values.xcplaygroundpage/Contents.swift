@@ -17,4 +17,5 @@ func multiply(number1: Int,number2: Int) -> Int {
 print (multiply(number1: 2, number2: 5))
 print(multiply(number1: 3, number2: 90))
 print(greeting1)
+print(greeting1)
 //: [Previous](@previous)  |  page 5 of 6  |  [Next: App Exercise - Separating Functions](@next)
