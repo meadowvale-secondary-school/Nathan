@@ -16,7 +16,7 @@ print(calculatePace(currentDistance: 5, totalDistance: 8, currentTime: 30))
  Now write a function called `pacing` that takes four `Double` arguments called `currentDistance`, `totalDistance`, `currentTime`, and `goalTime`. The function should also return a `String`, which will be the message to show the user. The function should call `calculatePace`, passing in the appropriate values, and capture the return value. The function should then compare the returned value to `goalTime` and if the user is on pace return "Keep it up!", and return "You've got to push it just a bit harder!" otherwise. Call the function and print the return value.
  */
 func pacing(currentDistance: Double, totalDistance: Double, currentTime: Double, goalTime: Double) -> String {
-    let pace == calculatePace()
+    let pace = calculatePace(currentDistance: currentDistance, totalDistance: totalDistance, currentTime: currentTime)
     if pace >= goalTime {
         return("Keep it up!")
     }
@@ -24,7 +24,7 @@ func pacing(currentDistance: Double, totalDistance: Double, currentTime: Double,
         return("You've got ot push it just a bit harder!")
     }
 }
-pacing(currentDistance: 700, totalDistance: 3000, currentTime: 1, goalTime: 400)
+pacing(currentDistance: 700, totalDistance: 3000, currentTime: 70, goalTime: 400)
 /*:
  
  _Copyright © 2017 Apple Inc._
