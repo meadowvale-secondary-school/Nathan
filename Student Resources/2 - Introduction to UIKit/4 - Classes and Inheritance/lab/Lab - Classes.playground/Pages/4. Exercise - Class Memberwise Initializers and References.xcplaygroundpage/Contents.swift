@@ -87,7 +87,7 @@ print(sameShip.position)
 sameShip.moveLeft()
 print(sameShip.position)
 print(falcon.position)
-//both positions changed because sameShip is memorized as the same object.
+//both positions changed because sameShip is memorized as the same object. If they were classes only sameShip would change because sameShip would be a copy of falcon not another name for falcon.
 /*:
  
  _Copyright © 2017 Apple Inc._
