@@ -22,9 +22,6 @@
                                 <rect key="frame" x="163" y="208" width="47" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="ButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cH5-kP-ado"/>
-                                </connections>
                             </button>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p7u-4G-NN0">
                                 <rect key="frame" x="163" y="298" width="49" height="31"/>
@@ -60,6 +57,7 @@
                         </connections>
                     </view>
                     <connections>
+                        <outlet property="button" destination="RK1-XD-vWE" id="ay0-ky-sqh"/>
                         <outlet property="slider" destination="eNK-Z8-mLr" id="mSj-nz-U1i"/>
                         <outlet property="toggle" destination="p7u-4G-NN0" id="5qG-3o-oA9"/>
                     </connections>

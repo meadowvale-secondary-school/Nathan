@@ -45,10 +45,12 @@ class ViewController: UIViewController {
         let location = sender.location(in: view)
         print(location)
     }
+    @IBOutlet weak var button: UIButton!
     @IBOutlet weak var toggle: UISwitch!
     @IBOutlet weak var slider: UISlider!
     override func viewDidLoad() {
         super.viewDidLoad()
+        button.addTarget(self, action: #selector(ButtonTapped(_:)),for:  .touchUpInside)
         // Do any additional setup after loading the view, typically from a nib.
     }
 
