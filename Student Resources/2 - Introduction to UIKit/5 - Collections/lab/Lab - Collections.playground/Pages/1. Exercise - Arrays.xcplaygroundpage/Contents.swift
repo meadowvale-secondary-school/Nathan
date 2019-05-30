@@ -3,6 +3,7 @@
  
  Assume you are an event coordinator for a community charity event and are keeping a list of who has registered. Create a variable `registrationList` that will hold strings. It should be empty after initialization.
  */
+//This is the 2.5 lab
 var registrationList: [String] = []
 
 /*:
