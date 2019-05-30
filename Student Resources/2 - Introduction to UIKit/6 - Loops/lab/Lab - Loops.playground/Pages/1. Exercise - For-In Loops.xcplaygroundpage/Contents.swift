@@ -3,6 +3,7 @@
  
  Create a for-in loop that loops through values 1 to 100, and prints each of the values.
  */
+//This is lab 2.6
 for numbers in 1...100 {
     print("This is number \(numbers)")
 }
