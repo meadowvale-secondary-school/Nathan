@@ -19,6 +19,8 @@ class ViewController: UIViewController {
     @IBOutlet var letterButtons: [UIButton]!
     @IBAction func buttonTapped(_ sender: UIButton) {
         sender.isEnabled = false
+        let letterString = sender.title(for: .normal)!
+        let letter = Character(letterString.lowercased())
     }
     
     override func viewDidLoad() {
@@ -26,9 +28,15 @@ class ViewController: UIViewController {
         newRound()
         // Do any additional setup after loading the view, typically from a nib.
     }
+    var currentGame: Game!
     func newRound() {
-        
+        let newWord = listOfWords.removeFirst()
+        currentGame = Game(word: newWord, incorrectMovesRemaining: incorrectMovesAllowed)
+        updateUI()
     }
-
+    func updateUI() {
+        scoreLabel.text = "Wins: \(totalWins), Losses: \(totalLosses)"
+        treeImageView.image = UIImage(named: "Tree \(currentGame.incorrectMovesRemaining)")
+    }
 }
 
